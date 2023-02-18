@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  text-align: center;
+}
+button {
+  padding: 10px 1.5rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+  transition: scale 0.5s;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  -webkit-transition: scale 0.5s;
+  -moz-transition: scale 0.5s;
+  -ms-transition: scale 0.5s;
+  -o-transition: scale 0.5s;
+}
+button:active {
+  scale: 0.9;
+}
+.container p {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+/* Dark mode */
+body.active {
+  background: #131316;
+}
+body.active p {
+  color: #fff;
+}
